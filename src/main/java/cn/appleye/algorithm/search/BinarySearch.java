@@ -9,9 +9,12 @@ public class BinarySearch {
     public int search(int[] num, int value){
         int min = 0; int max = num.length-1;
         int mid = (min+max)/2;
+        int index = -1;
 
         while(mid>=min && mid<=max){
 
         }
+
+        return index;
     }
 }
