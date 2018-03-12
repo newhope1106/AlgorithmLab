@@ -6,7 +6,7 @@ package cn.appleye.algorithm.search;
  * @description 线性查找
  */
 public class LinearSearch {
-    public int search(int[] num, int value){
+    public static int search(int[] num, int value){
         int index = -1;
         int length = num.length;
         for(int i=0; i<length; i++){

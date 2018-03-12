@@ -30,4 +30,20 @@ public class NumberFactoryUtil {
 
         return num;
     }
+
+    /**
+     * 生成随机数
+     * */
+    public static int randomValue(int[] range){
+        int min = range[0];
+        int gap = range[1] - min;
+        return min + (int)(Math.random()*gap);
+    }
+
+    /**
+     * 生成随机数
+     * */
+    public static int randomValue(int max){
+        return randomValue(new int[]{0, max});
+    }
 }

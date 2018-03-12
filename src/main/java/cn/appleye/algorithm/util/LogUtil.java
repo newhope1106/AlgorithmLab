@@ -23,4 +23,10 @@ public class LogUtil {
             System.out.println();
         }
     }
+
+    public static void printLog(String message){
+        if(LOGGABLE){
+            System.out.println(message);
+        }
+    }
 }
