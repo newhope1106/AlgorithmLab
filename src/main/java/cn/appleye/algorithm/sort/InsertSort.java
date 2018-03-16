@@ -5,4 +5,20 @@ package cn.appleye.algorithm.sort;
  * 插入排序
  */
 public class InsertSort {
+
+    public static void sort(int[] num){
+        int size = num.length;
+
+        for(int i=1; i<size; i++){
+            for(int j=i; j>0; j--){
+                if(num[j] < num[j-1]){
+                    int temp = num[j];
+                    num[j] = num[j-1];
+                    num[j-1] = temp;
+                } else {
+                    break;
+                }
+            }
+        }
+    }
 }
